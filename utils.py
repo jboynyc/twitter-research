@@ -55,5 +55,5 @@ def bold(str):
     return BOLD_START + str + BOLD_END
 
 def format_collection_name(str):
-    return str.replace('#', 'hashtag ').replace(' ', '_').lower()
+    return str.replace('#', 'hashtag ').replace(' ', '_').replace('"','').lower()
 
