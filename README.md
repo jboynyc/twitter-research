@@ -12,11 +12,11 @@ $ python3 track_stream.py \#icantbreathe
 
 ## requirements
 
-* MongoDB
-* python-requests
-* python-requests-oauthlib
-* pymongo
-* pyyaml
+* [MongoDB](https://www.mongodb.org/)
+* [python-requests](https://pypi.python.org/pypi/requests)
+* [python-requests-oauthlib](https://pypi.python.org/pypi/requests-oauthlib)
+* [pymongo](https://pypi.python.org/pypi/pymongo)
+* [pyyaml](https://pypi.python.org/pypi/PyYAML)
 
 Developed with Python 3. Probably won't work with Python 2.7 unless backported.
 
