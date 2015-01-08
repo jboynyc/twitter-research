@@ -29,6 +29,18 @@ token: xxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 token_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
+## keeping your collection deduplicated
+
+Sometimes the script will grab the same tweet twice. To make sure it doesn't get stored a second time, run this:
+
+```
+$ mongo MY_DB --eval 'db.MY_COLLECTION.ensureIndex( {"id": 1}, {unique: true, dropDups: true} )'
+```
+
+(Obviously replace MY_* with the appropriate values.)
+
+See [Create a Unique Index](http://docs.mongodb.org/manual/tutorial/create-a-unique-index/) in the MongoDB manual.
+
 ---
 
 **Disclaimer:** This is a *hack* and there are likely existing tools that do a better job.
